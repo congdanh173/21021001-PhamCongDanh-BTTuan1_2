@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <h3>*denotes mandotory</h3>
+    <form action="/action_page.php">
+        <label for="fname">Full name*:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="FistName LastName"><br>
+        <label for="email">Email address*:</label><br>
+        <input type="text" id="email" name="email" placeholder="EMAIL_ADDRESS">
+        <p>Select Tour Package*:</p>
+        <select id="cars" name="cars">
+            <option value="goa">Goa</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+        <p>Arrival date*:</p>
+        <input type="date" id="datemin" name="datemin">
+        <p>Number of persons*:</p>
+        <input type="number" placeholder="UNKNOWN_TYPE">
+        <p>What would you want to avail?*</p>
+        <input type="checkbox" id="Boarding" name="Boarding" value="Boarding">
+        <label for="Boarding">Boarding</label><br>
+        <input type="checkbox" id="Fooding" name="Fooding" value="Fooding">
+        <label for="Fooding">Fooding</label><br>
+        <input type="checkbox" id="Sightseeing" name="Sight seeing" value="Sight seeing">
+        <label for="Sightseeing">Sight seeing</label><br>
+        <p>Discout Coupon code:</p>
+        <input type="number" placeholder="UNKNOWN_TYPE">
+        <p>Terms and conditions*</p>
+        <input type="radio" id="iagree" name="fav_language" value="iagree">
+        <label for="iagree">I agree</label>
+        <input type="radio" id="idisagree" name="fav_language" value="idisagree">
+        <label for="idisagree">I disagree</label> <br>
+        <input type="submit" value="Complete reservation">
+      </form>
+</body>
+</html>

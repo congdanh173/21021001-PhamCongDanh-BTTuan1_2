@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{ 
+        margin: auto;
+        padding: 0px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        background: #f8f8f8;
+        margin: 20px;
+    }
+    .wrapper {
+        position: relative;
+        width: 500px;
+        height: 600px;
+        background: #fff;
+        border-radius: 0px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <form action="/action_page.php">
+            <label for="cars">Browser:</label>
+            <select id="cars" name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname"><br><br>
+            <label for="cars">Encryptin:</label>
+            <select id="cars" name="cars">
+              <option value="HG">2048(High Grade)</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select><br><br>
+        <form action="/action_page.php"oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 <br><br>
+                <input type="number" id="b" name="b" value="50">
+                <output name="x" for="a b"></output>
+        </form><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br><br>
+        <label for="time">Select a time:</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="bdt">Birthday (date and time):</label>
+        <input type="text" name="bdt" id="bdt"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email"><br><br>
+        <label for="sgoogle">Search Google:</label>
+        <input type="text" name="sgoogle" id="sgoogle"><br><br>
+        <label for="tlp">Telephone:</label>
+        <input type="number" name="tlp" id="tlp"><br><br>
+        <label for="ahome">Add your homepage:</label>
+        <input type="text" name="ahome" id="ahome"><br><br>
+        <input type="submit" value="Submit"><br><br>
+        <p>Note: The datalist tag is not supported in Safari or IE9 (and earlier)</p>
+    </div>
+</body>
+</html>
